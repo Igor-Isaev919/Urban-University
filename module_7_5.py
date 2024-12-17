@@ -10,13 +10,11 @@ for root, dirs, files in os.walk(directory):
         filesize = os.path.getsize(filepath)
         parent_dir = os.path.dirname(filepath)
 
-        print('-' * 50) #разделитель для удобства читаемости
+        print('-' * 50) #разделитель для читаемости
         print(
             f'Обнаружен файл: {file}\n'
             f'Путь: {filepath}\n'
             f'Размер: {filesize} байт\n'
             f'Время изменения: {formatted_time}\n'
             f'Родительская директория: {parent_dir}')
-        print('-' * 50) #разделитель для удобства читаемости
-
-
+        print('-' * 50) #разделитель для читаемости
