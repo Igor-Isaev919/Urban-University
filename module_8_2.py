@@ -3,7 +3,7 @@ def personal_sum(numbers):
     incorrect_data = 0
     for i in numbers:
         try:
-            result += float(i)
+            result += i
         except (TypeError, ValueError):
             print(f'Некорректный тип данных для подсчета суммы - {i}')
             incorrect_data += 1
@@ -17,7 +17,6 @@ def calculate_average(numbers):
         return total / valid
     except TypeError:
         print('В numbers записан некорректный тип данных')
-        return None
     except ZeroDivisionError:
         return 0
 
