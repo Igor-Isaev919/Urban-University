@@ -8,7 +8,7 @@ print(result)
 #task_2
 def get_advanced_writer(file_name):
     def write_everything(*data_set):
-        with open(file_name, 'w', encoding='utf-8') as file:
+        with open(file_name, 'a', encoding='utf-8') as file:
             for element in data_set:
                 file.write(str(element) + '\n')
     return write_everything
